@@ -1,0 +1,34 @@
+=== 1. Borrowing ===
+Priya borrowed: Book: Python 101 by A. Rao (ID 1)
+Could not borrow: 'Python 101' is already borrowed
+
+=== 2. More errors ===
+Rahul borrowed: Magazine: Tech Today, issue #45 (ID 2)
+Could not borrow: Rahul has reached the limit of 1 item(s)
+Could not return: Priya did not borrow 'Inception', so it can't be returned
+Priya has: ['Python 101']
+Rahul has: ['Tech Today']
+
+=== Returning items ===
+Priya returned Python 101, late fee: Rs 6
+Rahul returned Tech Today, late fee: Rs 0
+Rahul borrowed: DVD: Inception, 148 mins (ID 3)
+Priya has: []
+Rahul has: ['Inception']
+
+=== 3. Late fees for 3 days ===
+Book: Python 101 by A. Rao (ID 1) -> late fee for 3 days: Rs 6
+Magazine: Tech Today, issue #45 (ID 2) -> late fee for 3 days: Rs 3
+DVD: Inception, 148 mins (ID 3) -> late fee for 3 days: Rs 15
+
+=== 4. Class attribute ===
+Total items created: 3
+Same value through LibraryItem: 3
+
+=== 5. Encapsulation ===
+AttributeError: 'DVD' object has no attribute '__available'
+Is the DVD available? False
+Is the book available? True
+
+=== 6. Abstract class ===
+TypeError: Can't instantiate abstract class LibraryItem without an implementation for abstract method 'late_fee'
